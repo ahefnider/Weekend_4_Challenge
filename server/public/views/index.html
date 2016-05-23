@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <title>ToDo List</title>
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/clientapp.js"></script>
+    <!-- <link rel="stylesheet" href="form-style.css" /> -->
+  </HEAD>
+  <body>
+    <div class="intakeForm">
+      <form id="addToDo">
+
+        <label for="listItem">What item would you like to add?</label>
+        <input type="text" id="listItem" name="listItem" />
+
+        <label for="completed">Is this task completed?</label>
+        <select name="completed">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select>
+
+        <input type="submit" value="Submit List Item" />
+
+      </form>
+    </div>
+    <div>
+      <h1>To Do List:</h1>
+    </div>
+    <div class="container">
+
+    </div>
+  </body>
+</HTML>
