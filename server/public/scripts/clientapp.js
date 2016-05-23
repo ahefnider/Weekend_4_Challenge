@@ -24,10 +24,10 @@
 // This will delete a selected item from the list.
 
 function deleted() {
-     event.preventDefault();
-
+    //  event.preventDefault();
+    var confirmation = confirm('Are you sure you want to delete this task?');
      var taskid = $(this).parent().data('taskid');
-
+   if(confirmation) {
      $.ajax({
        type: 'DELETE',
        url: '/ToDo/' + taskid,
@@ -35,6 +35,8 @@ function deleted() {
          getList();
         },
       });
+   }
+
     };
 
 
