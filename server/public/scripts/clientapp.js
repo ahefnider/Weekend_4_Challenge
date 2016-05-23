@@ -97,17 +97,19 @@ $.ajax({
 });
 };
 
+// appendDom is called to get the database items to the dom.
 function appendDom(values) {
 $('.container').append('<div class="toDoList"></div>');
 var $el = $('.container').children().last();
 
-$el.append('<p>Task ' + values.taskid + '</p>');
-$el.append('<p>* ' + values.todo + '</p>');
+$el.append('<p>TaskID ' + values.taskid + '</p>');
+$el.append('<p>* ' + values.todo + ' *</p>');
 $el.append('<p>Is this task completed? ' + values.completed + '</p>');
 $el.data('taskid', values.taskid);
 $el.append('<button class="complete">Complete</button>');
 $el.append('<button class="delete">Delete</button>');
 }
+
 
 function appendComplete(values) {
   var $el = $('.toDoList').children().last();

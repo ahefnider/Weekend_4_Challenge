@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  /*background-color: #856D2E;*/
+}
+body {
+  background-image: url("cork-board.jpg");
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+#addToDo {
+  font-size: 22px;
+  /*-webkit-text-stroke: 1px white;*/
+  /*text-shadow: 2px 2px white;*/
+  color: black;
+}
+
+.toDoList {
+  float: left;
+  background-color: yellow;
+  /*background-image: url("Post-It.png");*/
+  border: 2px solid black;
+  margin: 5px;
+  padding: 10px;
+}
